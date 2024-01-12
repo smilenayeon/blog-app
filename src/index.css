@@ -54,6 +54,7 @@ footer{
 footer a{
   text-decoration: none;
   color:gray;
+  margin:15px;
 }
 footer a:hover,
 footer a:focus{
