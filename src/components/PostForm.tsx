@@ -27,7 +27,11 @@ export default function PostForm() {
                     title: title,
                     summary: summary,
                     content: content,
-                    updatedAt: new Date()?.toLocaleString(),
+                    updatedAt: new Date()?.toLocaleDateString('en-US', {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        second: "2-digit",
+                      }),
                     category: category,
                 });
                 toast.success("Successfully editted.");
@@ -39,7 +43,11 @@ export default function PostForm() {
                     title: title,
                     summary: summary,
                     content: content,
-                    createdAt: new Date()?.toLocaleString(),
+                    createdAt: new Date()?.toLocaleDateString('en-US', {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        second: "2-digit",
+                      }),
                     email: user?.email,
                     uid : user?.uid,
                     category: category,
